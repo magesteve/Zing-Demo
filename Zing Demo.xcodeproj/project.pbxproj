@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		41B705ED24B2B56400AB5CB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B705EB24B2B56400AB5CB9 /* Main.storyboard */; };
 		41B705EF24B2B56500AB5CB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B705EE24B2B56500AB5CB9 /* Assets.xcassets */; };
 		41B705F224B2B56500AB5CB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B705F024B2B56500AB5CB9 /* LaunchScreen.storyboard */; };
+		41B705FB24B2B7D200AB5CB9 /* ZingKit in Frameworks */ = {isa = PBXBuildFile; productRef = 41B705FA24B2B7D200AB5CB9 /* ZingKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41B705FB24B2B7D200AB5CB9 /* ZingKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "Zing Demo";
+			packageProductDependencies = (
+				41B705FA24B2B7D200AB5CB9 /* ZingKit */,
+			);
 			productName = "Zing Demo";
 			productReference = 41B705E224B2B56400AB5CB9 /* Zing Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 41B705D924B2B56400AB5CB9;
+			packageReferences = (
+				41B705F924B2B7D200AB5CB9 /* XCRemoteSwiftPackageReference "ZingKit" */,
+			);
 			productRefGroup = 41B705E324B2B56400AB5CB9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -338,6 +346,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		41B705F924B2B7D200AB5CB9 /* XCRemoteSwiftPackageReference "ZingKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/magesteve/ZingKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		41B705FA24B2B7D200AB5CB9 /* ZingKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41B705F924B2B7D200AB5CB9 /* XCRemoteSwiftPackageReference "ZingKit" */;
+			productName = ZingKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 41B705DA24B2B56400AB5CB9 /* Project object */;
 }
